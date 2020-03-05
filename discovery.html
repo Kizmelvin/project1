@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISCOVERY</title>
+    <link rel="stylesheet" href="discovery.css">
+</head>
+<body>
+    <div class="brand">
+        <a href="">DISCOVER</a>
+    </div>
+    <div class="Menu">
+        <a href="">About</a>
+        <a href="">News</a>
+        <a href="">Explore</a>
+      <a href="">Home</a>
+    </div>
+    <div class="hometext">
+        <h1>Find Out How Amazing Nature Is.</h1>
+        <input type="text"placeholder="what are you looking for?">
+        <button>Search</button>
+    </div>
+    <div class="row">
+                <div class="column">
+          <img src="images/desert.jpeg" alt="desert" onclick="myFunction(this);" 
+          >
+        </div>
+        <div class="column">
+          <img src="images/mountain2.jpeg" alt="Mountains" onclick="myFunction(this);"
+          >
+        </div>
+        <div class="column">
+          <img src="images/forest.jpeg" alt="forest" onclick="myFunction(this);"
+          >
+        </div>
+      </div>
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+      <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+        </script>
+    </body>
+</html>

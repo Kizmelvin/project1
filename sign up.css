@@ -1,0 +1,58 @@
+body{
+    padding: 0;
+    margin: 0;
+background-image: url("images/adven.jpg");
+background-size: cover;
+position: relative;
+background-repeat: no-repeat;
+font-family: sans-serif;
+}
+form{
+    margin-top: 10%;
+    margin-left: 50%;
+    position: center;
+    background-color: rgba(128, 128, 128, 0.7);
+    box-shadow: rgb(159, 84, 230);
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+form h1{
+    padding-top: 5%;
+    color: white;
+}
+input[type=text],input[type=password],input[type=email]{
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid oldlace;
+    border-radius: 5px;
+}
+::placeholder{
+    padding-left: 10px;
+}
+p{
+    padding-bottom: 5%;
+}
+button{
+    height: 20%;
+    width: 50%;
+    background-color: rgb(240, 130, 80);
+    color: white;
+    font-size: large;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+button:hover{
+width: 60%;
+background-color: whitesmoke;
+color: rgb(240, 130, 80) ;
+border: rgb(240, 130, 80) ;
+}
+label{
+    font-size:medium;
+    padding-left: 3%;
+    padding-right: 3%;
+}
